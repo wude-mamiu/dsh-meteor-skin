@@ -1,0 +1,62 @@
+﻿{
+  "name": "dsh-meteor-skin",
+  "version": "1.0.0",
+  "description": "Meteor-night wallpaper skin for DeepSeek Harness: one full-window picture (AI-upscaled), transparent sidebar, night-only ink. · 流星夜色：整窗流星壁纸、AI 超分、透明侧栏、夜间配色。",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "wallpaper",
+    "meteor",
+    "skin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wude-mamiu/dsh-meteor-skin.git"
+  },
+  "homepage": "https://github.com/wude-mamiu/dsh-meteor-skin#readme",
+  "bugs": {
+    "url": "https://github.com/wude-mamiu/dsh-meteor-skin/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "client.template.js",
+    "scripts",
+    "assets/background.jpg",
+    "assets/webp/background-2560.webp",
+    "assets/icon-180.png",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="流星夜色">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1a3a"/>
+      <stop offset="1" stop-color="#04070f"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#night)"/>
+  <circle cx="20" cy="20" r="2" fill="#e9f1ff"/>
+  <circle cx="44" cy="16" r="1.6" fill="#9fc3ff"/>
+  <circle cx="50" cy="30" r="1.4" fill="#e9f1ff"/>
+  <circle cx="16" cy="34" r="1.4" fill="#9fc3ff"/>
+  <path d="M40 14 L26 34" stroke="#9fd0ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 12 L38 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  <rect x="10" y="44" width="44" height="10" rx="5" fill="#7fb6ff" opacity="0.16"/>
+  <rect x="10" y="44" width="44" height="10" rx="5" fill="none" stroke="#7fb6ff" stroke-width="1.5"/>
+</svg>
